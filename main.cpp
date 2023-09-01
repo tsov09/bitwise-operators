@@ -2,6 +2,27 @@
 #include <vector>
 #include <string>
 
+void prev_hwk() {
+	//try {
+	//	find_nth_bit(3072, 10);
+	//	find_nth_bit(102, 10);
+	//	//find_nth_bit(102, 35);
+	//}
+	//catch (int x) {
+	//	std::cout << "The number is out of range of bit's count in int type." << std::endl;
+	//}
+
+	//std::vector<int> nums { 2, 7, 8, 5, 4, 8, 5, 2, 4 };
+	//
+	//std::cout << "Vector: { ";
+	//for (int i = 0; i < nums.size(); i++) {
+	//	std::cout << nums[i] << " ";
+	//}
+	//std::cout << "}" << std::endl;
+
+	//std::cout << find_single_element(nums) << " hasn't duplicate in vector." << std::endl;
+
+}
 
 int find_nth_bit(int number, int n) {
 	if (n >= 0 && n <= 8 * sizeof(int)) {
@@ -49,33 +70,13 @@ std::string get_binary_code_of_two_strings_sum(std::string str_1, std::string st
 }
 
 int main() {
-
-	//try {
-	//	find_nth_bit(3072, 10);
-	//	find_nth_bit(102, 10);
-	//	//find_nth_bit(102, 35);
-	//}
-	//catch (int x) {
-	//	std::cout << "The number is out of range of bit's count in int type." << std::endl;
-	//}
-
-	//std::vector<int> nums { 2, 7, 8, 5, 4, 8, 5, 2, 4 };
-	//
-	//std::cout << "Vector: { ";
-	//for (int i = 0; i < nums.size(); i++) {
-	//	std::cout << nums[i] << " ";
-	//}
-	//std::cout << "}" << std::endl;
-
-	//std::cout << find_single_element(nums) << " hasn't duplicate in vector." << std::endl;
-
+	//Compared counts of bits' values
 
 	std::cout << std::endl;
 
 	int a = 20119574;
 	int b = 1;
 	int count = 0;
-
 
 	for (int i = 0; i < 8 * sizeof(a); i++) {
 		if (a & b) {
@@ -99,6 +100,9 @@ int main() {
 	}
 	std::cout << " count of 0." << std::endl;
 	std::cout << std::endl;
+
+
+	//got binary code of two strings' sum
 
 	std::string str_1("Hello ");
 	std::string str_2("World!");
